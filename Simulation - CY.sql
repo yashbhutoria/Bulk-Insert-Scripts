@@ -1,8 +1,8 @@
-CREATE TABLE [Simulation - CY] (
+
+CREATE TABLE [Simulation] (
     [Time] DATETIME,
     [Report Type] varchar(50),
-    [Anaplan ID] varchar(50),
-    [Report Type_] varchar(50),
+    [Anaplan ID] varchar(max),
     [To Export for BI - One Time Load] varchar(50),
     [Promo-In Changed Position ID] varchar(50),
     [Wrong Promo Identifier] INT,
