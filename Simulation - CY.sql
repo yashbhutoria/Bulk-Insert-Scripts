@@ -295,7 +295,7 @@ CREATE TABLE [Simulation_1] (
     [RETRIALS (AOP - FY)] nvarchar(100),
     [Period for Fixed pay (AOP - FY)] nvarchar(100),
     [allowance (AOP - FY)] FLOAT,
-    [HRA (AOP - FY)] nvarchar(100),
+    [HRA (AOP - FY)] FLOAT,
     [Statutory Bonus (AOP - FY)] nvarchar(100),
     [Fixed Salary (AOP - FY)] nvarchar(100),
     [Promo Changed Sub Band  (AOP - FY)] nvarchar(100),
