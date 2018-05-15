@@ -1,4 +1,6 @@
 import re
+import pandas as pd
+import sys
 datatypemap = {
     'test': 'test'
 }
@@ -8,7 +10,7 @@ def stringContains(st, ptr):
 
 
 def dataTypeMapper(colname):
-    backwards_name = str([x for x in reversed(colname.split())]) 
+    backwards_name = str([x for x in reversed(colname.split())])
     knownKeyWords = {
         'COST': 'FLOAT',
         '%': 'FLOAT',
@@ -39,8 +41,8 @@ def createSchema(cols, tableName):
 
 def main():
     
-    cols = ['first', 'second', 'third']
-    tableName = 'TestTable'
+    cols = list(pd.read_csv(sys.argv[1]).columns)
+    tableName = sys.argv[1]
 
     for col in cols:
         dataTypeMapper(col)
